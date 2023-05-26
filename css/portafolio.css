@@ -36,7 +36,6 @@ body {
     color:var(--text-color);
 }
 section {
-    min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
 
@@ -76,7 +75,7 @@ body .header .logore .logor {
 
 }
 .navbar{
-    padding-left: 40rem;
+    padding-left: 28rem;
 }
 .navbar a {
     font-size: 1.7rem;
@@ -108,7 +107,7 @@ body .header .logore .logor {
     box-shadow: 5px 5px 5px 3px rgba(137, 148, 151, 0.2)
 }
 .home-contect h3 {
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -121,9 +120,14 @@ span {
 
 }
 
+span p {
+    color: var(--text-color);
+
+}
+
 
 .home-contect h1{
-    font-size: 5.6rem;
+    font-size: 7rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -357,8 +361,8 @@ span {
     font-size: 1.3rem;
 }
 .footer-iconTop a {
-    width: 80px;
-    height:80px ;
+    width: 50px;
+    height:50px ;
     font-size: 50px;
     display: inline-flex;
     justify-content: center;
@@ -386,21 +390,32 @@ span {
 
 
 /*breakpoints*/
+
 @media (max-width: 1200px){
     html {
-        font-size: 55%;
+        font-size: 65%;
+    }
+    .about-content{
+        display: flex;
+    }
+    .about-content p{
+        padding-left: 20px;
+        padding-top: 20px;
     }
 }
-@media (max-width: 991px){
+
+@media (max-width: 990px ){
     .header {
-    padding: 2rem 3%;
+    padding: 2rem 3% 2rem;
 }
     section {
-        padding: 3rem 8rem;
+        padding: 6rem 8rem;
     }
     .footer {
         padding: 2rem 3%;
     }
+}.navbar{
+    padding-left: 24rem;
 }
 
 
@@ -411,7 +426,6 @@ span {
     top: 0.8px;
     display:block;
 }
-
 
 .navbar {
     position: absolute;
@@ -443,7 +457,9 @@ flex-direction: column;
 .home-content h3 {
 font-size: 2.6rem;
 }
-
+.home-content{
+    padding-top: 20px;
+}
 .home-contect h1, h3{
     text-align: center;
 }
@@ -464,15 +480,36 @@ justify-content: center;
     display: flex;
     justify-content: center;
 }
+.about-content {
+display: block;
+}
+.about-content h2 h3{
+text-align: left;
+}
 .about img{
     width: 50vw;
     margin-top: 4rem;
     border-radius: 30px;
 
 }
+}
+
 .portfolio h2{
     margin-bottom: 3rem;
 }
-@media (max-width:617px ){
+@media (max-width: 600px){
+    html {
+        font-size: 40%;
+    }.home-contect h1, h3{
+        text-align: center;
+    }
+}
+@media (max-width: 400px){
+    html {
+        font-size: 35%;
+    }
     
+.home-contect h1,h3{
+    text-align: center;
+    }
 }
